@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title> Contact Cards!</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" media="screen" href="contact_card.css" />
+        <!-- <script type="text/javascript" src='http://code.jquery.com/jquery-1.10.2.min.js'></script> -->
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="contact_card.js"></script>
+        <script type="text/javascript">
+            // built-in script here
+            $(document).ready(function(){
+                // what should happen when the document is ready?
+                // alert("page is loaded!");
+            })
+        </script>
+    </head>
+    <body>
+        <div class="container">
+            <div class="top_stuff"></div>
+            <div class="middle_stuff">
+                <h1>Add User</h1>
+                <form action="submit" class="input_form" name="add_contact_card_form" id="add_contact_card_form" >
+                        <label for="first_name" id="label_first_name">First Name:</label>
+                        <input type="text" name="first_name" id="first_name" class="form_field" value="first_name"/>
+        
+                        <label for="last_name" id="label_last_name" >Last Name:</label>
+                        <input type="text" name="last_name" id="last_name" class="form_field" value="last_name"/>
+                        
+                        <label for="details_text" id="label_description" >Description:</label>
+                        <!-- <input type="text" name="description" id="description" class="form_field" value="description"/> -->
+                        <textarea form="add_contact_card_form" class="contact_card_details" name="details_text" id="details_text" placeholder="Describe this person" ></textarea>
+                        <!-- <label for="contact_number" id="label_contact_number" >Contact Number:</label>
+                        <input type="text" name="contact_number" id="contact_number" class="form_field" value="contact_number"/> -->
+                        
+                        <input type="submit" class="submit_button" >
+                    </form>
+
+
+                <div class="card_book" id="main_card_holder">
+                    <!-- <div class="contact_card" style="display: block;">
+                        <button id="show_card_first_last0" class="show_contact_card_button" name="first_last">Show Card: first_name + last_name</button>
+                        <div class="contact_card_details" style="display: none" >
+                            <h1>Person Name</h1>
+                            <p class="description" >This is a brief description of the person</p>
+                            <p style="display: none;">This is how slide toggle works. It's pretty sweet.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="contact_card" style="display: block;">
+                        <button id="show_card_first_last1" class="show_contact_card_button" name="first_last">Show Card: first_name + last_name</button>
+                        <div class="contact_card_details" style="display: none" >
+                            <h1>Person Name</h1>
+                            <p class="description" >This is a brief description of the person</p>
+                            <p style="display: none;">This is how slide toggle works. It's pretty sweet.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="contact_card" style="display: block;">
+                        <button id="show_card_first_last2" class="show_contact_card_button" name="first_last">Show Card: first_name + last_name</button>
+                        <div class="contact_card_details" style="display: none" >
+                            <h1>Person Name</h1>
+                            <p class="description" >This is a brief description of the person</p>
+                            <p style="display: none;">This is how slide toggle works. It's pretty sweet.
+                            </p>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+            <div class="bottom_stuff">
+                
+            </div>
+
+        </div>
+    </body>
+</html>
